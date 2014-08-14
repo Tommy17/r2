@@ -9,7 +9,13 @@ def checkio_0(x, y):
 
 	return ret
 
-checkio = lambda n, m: format(n ^ m, 'b').count('1')
+
+checkio_1 = lambda n, m: format(n ^ m, 'b').count('1')
+
+
+def checkio(n, m):
+    return bin(n ^ m).count('1')
+
 
 if __name__ == "__main__":
 	print(checkio(117, 17) == 3)
